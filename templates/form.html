@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='bootstrap-5.1.0-dist/css/bootstrap.min.css')}}")> -->
+    <!-- <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.min.css")> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}")>
+    <script type="application/javascript" src="https://unpkg.com/jquery@3.2.0"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    
+
+
+
+</head>
+  <body>
+  <h1>Гостевая книга</h1>
+  <div class="descrip">
+      <p>Оставьте <i>отзыв, жалобу, или предложение</i>, как нам стать лучше!</p>
+      <p>Спасибо, что помогаете нам расти!</p>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" style="background-color: white; border: none" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <form id="review-form">
+        <div class="form-group">
+          <label for="input-name">Имя</label>
+          <input type="text" name="name" class="form-control" id="input-name" placeholder="Введите имя">
+        </div>
+        <div class="form-group">
+          <label for="input-review">Отзыв</label>
+          <textarea name="review_content" class="form-control" id="input-review" rows="3" placeholder="Будем рады любому фидбеку!"></textarea>
+        </div>
+        <button type="button" style="background-color: rgb(32, 27, 31); margin-top:10px; " class="btn btn-primary submit-btn">Отправить отзыв</button>
+      </form>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>

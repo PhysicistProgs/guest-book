@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+
+<body>
+    <h1>Отзывы из гостевой книги</h1>
+    {%for review in reviews%}
+    <h3>{{review.name}}</h3>
+    <div>{{review.review_content}}</div>
+    {%endfor%}
+</body>

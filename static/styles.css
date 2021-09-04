@@ -1,0 +1,26 @@
+h1 {
+    margin: 20px;
+    color:rgb(71, 71, 71)
+}
+body {
+    background-color: rgb(233, 206, 255);
+}
+
+form {
+    width: 300px;
+    margin: 20px;
+
+}
+
+.descrip {
+    margin: 20px;
+    line-height:1.2em;
+    font-weight: 700;
+    color:rgb(71, 71, 71);
+    width: 300px;
+}
+
+
+button {
+    background-color: rgb(32, 27, 27);
+}
