@@ -1,5 +1,4 @@
-
-
+"""Configures server and database"""
 
 DEBUG = True
 SECRET_KEY = 'asdfsdfssf asf dsgsdg'

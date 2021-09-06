@@ -1,13 +1,15 @@
+/*Implement sending request with jQuery.ajax`*/
+
 let submitButton = document.querySelector(".submit-btn")
 console.log(submitButton)
 
 submitButton.onclick = function() {
     console.log("submit button clicked")
-    // console.log($('#review-form').serialize())
     sendRequest()
 }
 
 function sendRequest() {
+    /*Sends requests with data from form. Shows modal with request's result*/
     var request = $.ajax({
         url: '/comments',
         dataType: 'text',
@@ -32,6 +34,7 @@ function sendRequest() {
     
 
     function showModal(isSuccessed, jqXHR) {
+        /*Shows modal with information about request was send`*/
         var myModal = new bootstrap.Modal(
                       document.querySelector('#exampleModal'))
         let modalTitle = document.querySelector("#exampleModalLabel")
@@ -42,7 +45,6 @@ function sendRequest() {
         } else {
             modalTitle.textContent = "Неудача!"
             modalBody.textContent = jqXHR.responseText
-            // modalBody.append(jqXHR.responseText)
         }
         myModal.show()
     }

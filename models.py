@@ -1,4 +1,8 @@
+"""Database tables: now contains only one table "Review".
+Database is stored in forumbase.db"""
+
 from app import db
+
 
 class Review(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
